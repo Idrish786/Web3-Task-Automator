@@ -3,3 +3,10 @@ const crypto = require('crypto');
 
 // Initializing the automated task manager
 console.log("System Booting: Web3 Task Automator V1.0...");
+
+// Active wallets for protocol interactions
+const activeWallets = [
+  { address: "0x1A4b...3f9", proxy: "residential_us_1" },
+  { address: "0x9C2e...8a1", proxy: "residential_uk_2" },
+  { address: "0x4D8f...1b7", proxy: "residential_sg_3" }
+];
