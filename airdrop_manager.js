@@ -10,3 +10,9 @@ const activeWallets = [
   { address: "0x9C2e...8a1", proxy: "residential_uk_2" },
   { address: "0x4D8f...1b7", proxy: "residential_sg_3" }
 ];
+
+// Protocols to monitor for liquidity staking or testnet interaction
+const targetProtocols = {
+  "SuiNetwork": { task: "Testnet Interaction", status: "pending" },
+  "Fasset": { task: "Check Liquidity Pools", status: "pending" }
+};
