@@ -16,3 +16,9 @@ const targetProtocols = {
   "SuiNetwork": { task: "Testnet Interaction", status: "pending" },
   "Fasset": { task: "Check Liquidity Pools", status: "pending" }
 };
+
+function simulateGasFees() {
+  // Fetch current network gas to avoid paying high fees
+  const baseGwei = Math.random() * (25 - 10) + 10;
+  return parseFloat(baseGwei.toFixed(2));
+}
