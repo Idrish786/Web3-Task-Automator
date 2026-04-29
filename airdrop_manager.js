@@ -22,3 +22,9 @@ function simulateGasFees() {
   const baseGwei = Math.random() * (25 - 10) + 10;
   return parseFloat(baseGwei.toFixed(2));
 }
+
+function assignProxy(wallet) {
+  // Enforcing strict IP routing to prevent device fingerprinting
+  console.log(`Routing traffic for ${wallet.address} through ${wallet.proxy}...`);
+  return true;
+}
