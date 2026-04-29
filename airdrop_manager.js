@@ -28,3 +28,11 @@ function assignProxy(wallet) {
   console.log(`Routing traffic for ${wallet.address} through ${wallet.proxy}...`);
   return true;
 }
+
+function executeTask(wallet, protocol, taskName) {
+  if (assignProxy(wallet)) {
+    console.log(`[SUCCESS] Executing ${taskName} on ${protocol} for wallet ${wallet.address}`);
+  } else {
+    console.log(`[ERROR] Proxy connection failed for ${wallet.address}`);
+  }
+}
