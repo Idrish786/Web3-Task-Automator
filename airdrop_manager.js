@@ -54,3 +54,11 @@ function checkNetworkConditions() {
   }
   return true;
 }
+
+function processAllWallets() {
+  activeWallets.forEach(wallet => {
+    // Attempting interactions for each profile
+    executeTask(wallet, "SuiNetwork", targetProtocols["SuiNetwork"].task);
+  });
+  updateTaskStatus("SuiNetwork", "completed");
+}
