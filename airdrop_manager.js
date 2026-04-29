@@ -43,3 +43,14 @@ function updateTaskStatus(protocol, newStatus) {
     console.log(`Database updated: ${protocol} is now ${newStatus}`);
   }
 }
+
+function checkNetworkConditions() {
+  const currentGas = simulateGasFees();
+  console.log(`Current Network Gas: ${currentGas} Gwei`);
+  
+  if (currentGas > 20) {
+    console.log("Gas is too high right now. Pausing operations to save funds.");
+    return false;
+  }
+  return true;
+}
