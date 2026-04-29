@@ -36,3 +36,10 @@ function executeTask(wallet, protocol, taskName) {
     console.log(`[ERROR] Proxy connection failed for ${wallet.address}`);
   }
 }
+
+function updateTaskStatus(protocol, newStatus) {
+  if (targetProtocols[protocol]) {
+    targetProtocols[protocol].status = newStatus;
+    console.log(`Database updated: ${protocol} is now ${newStatus}`);
+  }
+}
