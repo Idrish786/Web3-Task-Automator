@@ -5,3 +5,7 @@
 
     "description": "Multi-wallet interaction script for EVM and Sui networks",
   
+  "main": "airdrop_manager.js",
+
+    "author": "Web3 Automation Dev",
+  
