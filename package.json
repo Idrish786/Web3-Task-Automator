@@ -1,3 +1,7 @@
 {
   "name": "web3-task-automator",
   
+  "version": "1.0.0",
+
+    "description": "Multi-wallet interaction script for EVM and Sui networks",
+  
