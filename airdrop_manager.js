@@ -62,3 +62,14 @@ function processAllWallets() {
   });
   updateTaskStatus("SuiNetwork", "completed");
 }
+
+// Run the script if network conditions are favorable
+if (require.main === module) {
+  console.log("Starting daily routine...");
+  
+  const isNetworkGood = checkNetworkConditions();
+  if (isNetworkGood) {
+    processAllWallets();
+    console.log("All tasks completed safely.");
+  }
+}
