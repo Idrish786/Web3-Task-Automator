@@ -13,3 +13,9 @@
 
     "dependencies": {
       
+    "ethers": "^6.8.0",
+
+      "axios": "^1.6.0"
+
+        }
+}
