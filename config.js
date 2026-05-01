@@ -14,3 +14,11 @@ module.exports = {
   },
 
       security: {
+
+    useResidentialProxies: true,
+
+    delayBetweenTasksMs: 5000,
+
+      maxGasPriceGwei: 25
+  }
+};
