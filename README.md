@@ -47,3 +47,21 @@ Do NOT upload your private keys or seed phrases to GitHub.
 This repository uses a .env file to store sensitive data locally.
 
 Update the config.js file with your public wallet addresses and proxy IP ports.
+
+## Running the Automator
+
+Once your RPCs and proxies are configured, start the execution loop:
+
+node airdrop_manager.js
+
+The console will log the success or failure of each protocol interaction.
+
+## Disclaimer
+
+Use this software at your own risk. Automated interactions may result in loss of gas fees.
+
+Always test with small amounts of funds before scaling to your main wallets.
+
+## License
+
+This project is licensed under the MIT License.
