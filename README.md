@@ -29,3 +29,21 @@ Running multiple wallets requires strict OPSEC to avoid being flagged.
 * **Randomized Delays:** Sleep functions are executed between every on-chain action.
 
 * **Gas Monitoring:** Tasks automatically pause if network Gwei exceeds the configured limit.
+
+## Setup Guide
+
+Ensure you have Node.js (v18+) installed on your system.
+
+1. Clone this repository.
+
+2. Install the required Web3 libraries by running:
+
+npm install
+
+## Wallet Configuration
+
+Do NOT upload your private keys or seed phrases to GitHub.
+
+This repository uses a .env file to store sensitive data locally.
+
+Update the config.js file with your public wallet addresses and proxy IP ports.
