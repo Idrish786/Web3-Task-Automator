@@ -6,3 +6,7 @@ const config = require('./config.js');
 
 const connection = new Connection({ fullnode: config.networks.sui.rpc });
 ​const provider = new JsonRpcProvider(connection);
+
+async function checkSuiBalance(walletAddress) {
+try {
+const balance = await provider.getCoinBalances({ owner: walletAddress });
