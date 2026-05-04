@@ -10,3 +10,9 @@ const connection = new Connection({ fullnode: config.networks.sui.rpc });
 async function checkSuiBalance(walletAddress) {
 try {
 const balance = await provider.getCoinBalances({ owner: walletAddress });
+
+return balance;
+} catch (error) {
+console.error("Error fetching SUI balance from node:", error);
+}
+}
