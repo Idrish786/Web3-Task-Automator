@@ -16,3 +16,6 @@ return balance;
 console.error("Error fetching SUI balance from node:", error);
 }
 }
+
+async function interactWithNavi(wallet, amount) {
+console.log("Initiating NAVI protocol deposit and borrow loop...");
