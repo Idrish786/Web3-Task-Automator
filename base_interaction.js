@@ -37,3 +37,9 @@ const wallet = new ethers.Wallet(walletPrivateKey, baseProvider);
 const routerAddress = "0x..."; // DEX Router
 
   console.log("Wallet connected:", wallet.address);
+
+// Verification of sufficient funds before execution
+
+  const balance = await baseProvider.getBalance(wallet.address);
+
+  if (balance === 0n) {
