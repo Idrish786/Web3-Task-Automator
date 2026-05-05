@@ -33,3 +33,7 @@ async function executeBaseSwap(walletPrivateKey, tokenIn, tokenOut, amount) {
 const wallet = new ethers.Wallet(walletPrivateKey, baseProvider);
 
   // Placeholder for DEX router contract connection (e.g., Uniswap or Aerodrome)
+
+const routerAddress = "0x..."; // DEX Router
+
+  console.log("Wallet connected:", wallet.address);
