@@ -25,3 +25,7 @@ async function checkBaseGas() {
   }
 
 }
+
+async function executeBaseSwap(walletPrivateKey, tokenIn, tokenOut, amount) {
+
+  console.log("Preparing swap transaction on Base...");
