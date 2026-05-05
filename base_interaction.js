@@ -43,3 +43,9 @@ const routerAddress = "0x..."; // DEX Router
   const balance = await baseProvider.getBalance(wallet.address);
 
   if (balance === 0n) {
+
+console.log("Insufficient ETH for gas fees on Base.");
+
+    return false;
+
+  }  
