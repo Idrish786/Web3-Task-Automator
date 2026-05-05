@@ -19,3 +19,9 @@ async function checkBaseGas() {
     return parseFloat(gasPrice);
 
   } catch (err) {
+
+  console.error("Failed to fetch Base network gas:", err);
+
+  }
+
+}
