@@ -49,3 +49,9 @@ console.log("Insufficient ETH for gas fees on Base.");
     return false;
 
   }  
+
+console.log("Transaction simulation successful.");
+
+  return true;
+
+}
