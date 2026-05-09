@@ -5,3 +5,6 @@ const fs = require('fs');
 // Utility to safely generate multiple testnet wallets
 
 function generateNewWallet() {
+
+const wallet = ethers.Wallet.createRandom();
+  
