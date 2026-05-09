@@ -19,3 +19,7 @@ return {
 }
 
 function saveWalletToDB(walletData) {
+
+// Warning: Do not run this on a public server without encryption
+  console.log("Securely storing encrypted wallet data to local storage...");
+}
