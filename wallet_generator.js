@@ -15,3 +15,7 @@ return {
     privateKey: wallet.privateKey, 
     phrase: wallet.mnemonic.phrase 
   };
+
+}
+
+function saveWalletToDB(walletData) {
