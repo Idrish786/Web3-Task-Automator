@@ -8,3 +8,4 @@ function generateNewWallet() {
 
 const wallet = ethers.Wallet.createRandom();
   
+console.log("New Wallet Successfully Created:", wallet.address);
