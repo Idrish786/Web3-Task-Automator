@@ -13,3 +13,5 @@ const ERC20_ABI = [
   "function allowance(address owner, address spender) external view returns (uint256)"
 
   ];
+
+async function approveToken(wallet, tokenAddress, amount) {
