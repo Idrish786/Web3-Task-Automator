@@ -23,3 +23,5 @@ const tokenContract = new ethers.Contract(tokenAddress, ERC20_ABI, wallet);
 try {
 
   // Simulating the approval transaction
+
+  const tx = await tokenContract.approve(UNISWAP_ROUTER_ADDRESS, amount);
