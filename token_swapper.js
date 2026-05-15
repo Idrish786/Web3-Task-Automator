@@ -25,3 +25,7 @@ try {
   // Simulating the approval transaction
 
   const tx = await tokenContract.approve(UNISWAP_ROUTER_ADDRESS, amount);
+
+  console.log("Waiting for network confirmation...");
+
+  // await tx.wait();
