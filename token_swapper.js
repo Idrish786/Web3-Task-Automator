@@ -17,3 +17,5 @@ const ERC20_ABI = [
 async function approveToken(wallet, tokenAddress, amount) {
 
 console.log("Checking current token allowance...");
+
+const tokenContract = new ethers.Contract(tokenAddress, ERC20_ABI, wallet);
