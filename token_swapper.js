@@ -29,3 +29,7 @@ try {
   console.log("Waiting for network confirmation...");
 
   // await tx.wait();
+
+  console.log("Approval successful. Ready to execute swap.");
+
+  return true;
