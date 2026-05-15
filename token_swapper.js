@@ -33,3 +33,7 @@ try {
   console.log("Approval successful. Ready to execute swap.");
 
   return true;
+
+  } catch (error) {
+
+  console.error("Token approval failed due to network error:", error.message);
