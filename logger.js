@@ -7,3 +7,7 @@ const path = require('path');
 class TransactionLogger {
 
     constructor() {
+
+    this.logPath = path.join(__dirname, 'transactions.log');
+
+    }
