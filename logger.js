@@ -23,3 +23,9 @@ logEvent(level, message) {
         console.log(logEntry.trim());
 
     }
+
+success(msg) { this.logEvent('info', msg); }
+
+    error(msg) { this.logEvent('error', msg); }
+
+}
