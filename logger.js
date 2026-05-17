@@ -15,3 +15,5 @@ class TransactionLogger {
 logEvent(level, message) {
 
         const timestamp = new Date().toISOString();
+
+   const logEntry = \[${timestamp}] [${level.toUpperCase()}] ${message}\n`;` 
