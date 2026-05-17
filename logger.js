@@ -17,3 +17,9 @@ logEvent(level, message) {
         const timestamp = new Date().toISOString();
 
    const logEntry = \[${timestamp}] [${level.toUpperCase()}] ${message}\n`;` 
+
+    fs.appendFileSync(this.logPath, logEntry);
+
+        console.log(logEntry.trim());
+
+    }
