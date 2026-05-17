@@ -11,3 +11,7 @@ class TransactionLogger {
     this.logPath = path.join(__dirname, 'transactions.log');
 
     }
+
+logEvent(level, message) {
+
+        const timestamp = new Date().toISOString();
