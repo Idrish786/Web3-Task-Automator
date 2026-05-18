@@ -23,3 +23,7 @@ stmt.run(wallet, protocol, new Date().toISOString());
 function getInteractionCount(wallet) {
 
     return new Promise((resolve, reject) => {
+
+db.get("SELECT COUNT(*) as count FROM interactions WHERE wallet = ?", [wallet], (err, row) => {
+
+            if (err) reject(err);                       
