@@ -5,3 +5,7 @@ const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('./wallets.db');
 
 db.serialize(() => {
+
+db.run("CREATE TABLE IF NOT EXISTS interactions (id INTEGER PRIMARY KEY, wallet TEXT, protocol TEXT, timestamp DATETIME)");
+
+});             
