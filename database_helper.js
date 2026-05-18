@@ -19,3 +19,7 @@ stmt.run(wallet, protocol, new Date().toISOString());
     stmt.finalize();
 
 }
+
+function getInteractionCount(wallet) {
+
+    return new Promise((resolve, reject) => {
