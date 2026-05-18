@@ -9,3 +9,7 @@ db.serialize(() => {
 db.run("CREATE TABLE IF NOT EXISTS interactions (id INTEGER PRIMARY KEY, wallet TEXT, protocol TEXT, timestamp DATETIME)");
 
 });             
+
+function recordInteraction(wallet, protocol) {
+
+    const stmt = db.prepare("INSERT INTO interactions (wallet, protocol, timestamp) VALUES (?, ?, ?)");
