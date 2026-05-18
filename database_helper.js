@@ -27,3 +27,11 @@ function getInteractionCount(wallet) {
 db.get("SELECT COUNT(*) as count FROM interactions WHERE wallet = ?", [wallet], (err, row) => {
 
             if (err) reject(err);                       
+
+resolve(row.count);
+
+        });
+
+    });
+
+}       
