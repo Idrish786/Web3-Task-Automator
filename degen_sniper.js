@@ -17,3 +17,7 @@ const provider = new ethers.JsonRpcProvider(config.networks.base.rpc);
 console.log("Checking Base network gas fees...");
 
     try {
+
+    const feeData = await provider.getFeeData();
+
+        const currentGas = ethers.formatUnits(feeData.gasPrice, "gwei")
