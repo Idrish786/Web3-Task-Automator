@@ -37,3 +37,11 @@ console.log("Checking Base network gas fees...");
         // Execution logic deferred to router contract
 
         return true;
+
+    } catch (error) {
+
+        console.error("Sniper module failed:", error.message);
+
+    }
+
+}
