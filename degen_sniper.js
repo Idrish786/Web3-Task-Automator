@@ -31,3 +31,9 @@ console.log("Checking Base network gas fees...");
             return false;
 
         }
+
+    console.log("Transaction conditions met. Building swap payload...");
+
+        // Execution logic deferred to router contract
+
+        return true;
