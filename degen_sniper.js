@@ -13,3 +13,7 @@ async function snipeDegen(walletPrivateKey, amountInEth) {
 const provider = new ethers.JsonRpcProvider(config.networks.base.rpc);
 
     const signer = new ethers.Wallet(walletPrivateKey, provider);
+
+console.log("Checking Base network gas fees...");
+
+    try {
