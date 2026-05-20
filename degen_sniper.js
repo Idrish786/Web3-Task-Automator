@@ -21,3 +21,7 @@ console.log("Checking Base network gas fees...");
     const feeData = await provider.getFeeData();
 
         const currentGas = ethers.formatUnits(feeData.gasPrice, "gwei")
+
+    console.log(\Current Network Gwei: ${currentGas}`);`
+
+        if (parseFloat(currentGas) > 30) {
