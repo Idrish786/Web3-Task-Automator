@@ -25,3 +25,9 @@ console.log("Checking Base network gas fees...");
     console.log(\Current Network Gwei: ${currentGas}`);`
 
         if (parseFloat(currentGas) > 30) {
+
+        console.log("Gas too high, aborting swap to save funds.");
+
+            return false;
+
+        }
