@@ -15,3 +15,5 @@ console.log(\Initiating stake of ${amountToStake} SUI into Volo protocol...`);`
 console.log("Building Programmable Transaction Block (PTB)...");
 
         // Split coins logic for gas management    
+
+    console.log("Reserving 0.05 SUI for network execution fees.");
