@@ -11,3 +11,7 @@ async function stakeSuiToVolo(walletAddress, amountToStake) {
 console.log(\Initiating stake of ${amountToStake} SUI into Volo protocol...`);`
 
     try {
+
+console.log("Building Programmable Transaction Block (PTB)...");
+
+        // Split coins logic for gas management    
