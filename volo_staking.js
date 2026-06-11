@@ -17,3 +17,5 @@ console.log("Building Programmable Transaction Block (PTB)...");
         // Split coins logic for gas management    
 
     console.log("Reserving 0.05 SUI for network execution fees.");
+
+    // Simulating network confirmation delay
