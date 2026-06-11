@@ -19,3 +19,5 @@ console.log("Building Programmable Transaction Block (PTB)...");
     console.log("Reserving 0.05 SUI for network execution fees.");
 
     // Simulating network confirmation delay
+
+    await new Promise(resolve => setTimeout(resolve, 2500));
