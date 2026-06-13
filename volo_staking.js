@@ -23,3 +23,7 @@ console.log("Building Programmable Transaction Block (PTB)...");
     await new Promise(resolve => setTimeout(resolve, 2500));
 
     console.log("vSUI successfully minted to wallet.");
+
+    console.log("Updating local database with interaction record.");
+
+        return {
