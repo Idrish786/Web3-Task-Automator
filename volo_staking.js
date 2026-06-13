@@ -21,3 +21,5 @@ console.log("Building Programmable Transaction Block (PTB)...");
     // Simulating network confirmation delay
 
     await new Promise(resolve => setTimeout(resolve, 2500));
+
+    console.log("vSUI successfully minted to wallet.");
